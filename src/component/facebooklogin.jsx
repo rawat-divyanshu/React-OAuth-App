@@ -1,18 +1,21 @@
 import React from "react";
 import FacebookLogin from "react-facebook-login";
+import "./bootstrap-social.css";
 
-const FacebookLoginButton = () => {
+const FacebookLoginButton = (props) => {
   const responseFacebook = (response) => {
     console.log(response);
+    props.facebookLoginResponse(response);
   };
   return (
     <React.Fragment>
       <FacebookLogin
-        appId="1088597931155576"
+        appId="272446897472004"
         autoLoad={true}
         fields="name,email,picture"
-        scope="public_profile,user_friends,user_actions.books"
         callback={responseFacebook}
+        cssClass="btn btn-sm btn-social btn-facebook"
+        icon="fab fa-facebook"
       />
       {document.getElementById("demo")}
     </React.Fragment>

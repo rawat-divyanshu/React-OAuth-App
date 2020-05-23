@@ -42,7 +42,9 @@ class HomeCard extends Component {
                     <span className="fab fa-facebook"></span> Sign in with
                     Facebook
                   </a> */}
-                  <FacebookLoginButton />
+                  <FacebookLoginButton
+                    facebookLoginResponse={this.props.facebookLoginResponse}
+                  />
                   <br></br>
                   <br></br>
                   <a className="btn btn-sm btn-social btn-linkedin">

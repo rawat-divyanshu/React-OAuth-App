@@ -42,6 +42,7 @@ const GithubLoginButton = (props) => {
         onFailure={reponseGithub}
         buttonText="Login with Github"
         className="btn-github"
+        icon="fab fa-github"
       />
       {document.getElementById("example")}
     </React.Fragment>
