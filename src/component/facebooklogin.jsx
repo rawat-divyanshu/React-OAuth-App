@@ -11,7 +11,6 @@ const FacebookLoginButton = (props) => {
     <React.Fragment>
       <FacebookLogin
         appId="272446897472004"
-        autoLoad={true}
         fields="name,email,picture"
         callback={responseFacebook}
         cssClass="btn btn-sm btn-social btn-facebook"
